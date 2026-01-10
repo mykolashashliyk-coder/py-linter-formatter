@@ -4,7 +4,7 @@ def format_linter_error(error: dict) -> dict:
         "column": error.get("column_number", error.get("colunm")),
         "message": error.get("text", error.get("message")),
         "name": error.get("code", error.get("name")),
-        "source": error.get("source","flake8"),
+        "source": error.get("source", "flake8"),
     }
 
 
